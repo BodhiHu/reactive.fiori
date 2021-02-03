@@ -163,4 +163,6 @@ This will create a new class(```ReactiveUI5Component```) for the given UI5 Contr
 
 ## Roadmaps
 
+[ ] integrate Github CICD pipeline;
+[ ] add webpack/babeljs building systems;
 [ ] supports on-demand-loading of UI5 controls;
