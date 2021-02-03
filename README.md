@@ -141,3 +141,26 @@ export default ExamplePage;
 
 ```
 
+## Missing UI5 Components ?
+
+Just add it to ```./scripts/create-reactive-ui5-components.js```, for example:
+
+```
+  {
+    dir: 'dynamic-page',
+    name: 'DynamicPage',
+    ctrl: 'sap.f.DynamicPage'
+  },
+```
+
+And run:
+
+```
+node ./scripts/create-reactive-ui5-components.js
+```
+
+This will create a new class(```ReactiveUI5Component```) for the given UI5 Control
+
+## Roadmaps
+
+[ ] supports on-demand-loading of UI5 controls;
