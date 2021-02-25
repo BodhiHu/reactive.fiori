@@ -1,16 +1,21 @@
 
-sap.ui.define([
-  "sap/ui/core/Control"
-], function (
-  Control
-) {
+export default function bootUI5 (onBooted) {
 
-  "use strict";
+  sap.ui.define([
+    "sap/ui/core/Control"
+  ], function (
+    Control
+  ) {
 
-  console.info("UI5 is ready");
+    "use strict";
 
-  sap.ui.getCore().attachInit(function () {
-    console.info("UI5 is initted");
+    console.info("UI5 is ready");
+
+    sap.ui.getCore().attachInit(function () {
+      console.info("UI5 is initted");
+      onBooted && onBooted();
+    });
+
   });
 
-});
+}

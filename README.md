@@ -32,7 +32,19 @@ $ npm install reactive.fiori
 3. bootstrap UI5 before importing any reactive.fiori components
 
 ```
-import 'reactive.fiori/src/ui5/bootstrap';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import bootUI5 'reactive.fiori/src/ui5/bootstrap';
+
+bootUI5(() => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+});
 ```
 
 4. render react views with reactive.fiori
