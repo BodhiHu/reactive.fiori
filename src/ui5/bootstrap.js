@@ -12,7 +12,7 @@ export default function bootUI5 (onBooted) {
     console.info("UI5 is ready");
 
     sap.ui.getCore().attachInit(function () {
-      console.info("UI5 is initted");
+      console.info("UI5 is inited/booted");
       onBooted && onBooted();
     });
 
