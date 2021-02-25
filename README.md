@@ -29,7 +29,7 @@ $ npm install reactive.fiori
     >
 ```
 
-3. bootstrap UI5 before importing any reactive.fiori components
+3. bootstrap UI5 and then render the react ```<App />```
 
 ```
 import React from 'react';
